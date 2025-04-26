@@ -19,7 +19,7 @@ void setup() {
     .gpio_pin = DIMMER_PIN,
     .phase = PHASE_NUM,
     .initial_level = 0,  // Start with light off
-    .curve_type = rbDIMMER_CURVE_RMS
+    .curve_type = RBDIMMER_CURVE_RMS
   };
   
   rbdimmer_create_channel(&config, &dimmer);
